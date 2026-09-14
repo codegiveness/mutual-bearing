@@ -1,0 +1,11 @@
+# Developing Mutual Bearing
+
+`GUIDANCE.md` is the canonical complete behavioral policy: automatic interpretation and integration of every delivered user prompt, carried into appropriate action. The standard adopter kit includes persistent guidance and first-party setup and repair skills. This repository's `AGENTS.md` is contributor-only; do not copy it into an adopting project.
+
+The project is standalone. Do not introduce an external skill dependency, a mandatory prompt-rewriting step, or a second behavioral policy in the documentation. Skills are installed together and loaded selectively. Setup is explicit; repair supplies focused diagnostic depth without becoming necessary for the core responsibilities to work. Edit only canonical `GUIDANCE.md`, then run `node scripts/sync-guidance.mjs` to refresh the setup skill's byte-identical distribution resource.
+
+Use `docs/design.md` for architectural boundaries, `docs/diagnosis.md` for awareness and repair distinctions, and `docs/integration.md` for adoption. Explain the project's own behavior rather than presenting a catalog of inspirations. Preserve required copyright notices in the license files.
+
+Behavioral changes need exercised sessions following `evaluation/README.md`. The primary condition must work with no skills available and include direct action, meaningful uncertainty, and corrections that reach artifacts. Also exercise kit skill selection and distinguish native installation/loading evidence from fixture delivery. Evaluate observable work failures, not labels about intelligence, effort, or blame; human context matters without guaranteeing results or making the human responsible for model limitations. Keep raw outputs and failures. Historical archives are immutable evidence, not current instructions or proof of the revised behavior. Do not run model evaluations or publish conversation data merely for a documentation edit.
+
+Preserve the user's goals, authority, and meaningful constraints when changing wording. Universal applicability is an objective, not proof of complete awareness, host loading, automatic interruption, or human agreement. Source material and independently installed tools outside this checkout remain outside the editing scope.
