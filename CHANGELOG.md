@@ -1,6 +1,6 @@
 # Mutual Bearing
 
-## Unreleased
+## 0.1.0 — 2026-09-14
 
 - Prepare a public Git distribution with an explicit file allowlist, local-only historical evidence, clearer adoption and contribution documentation, and a privacy-aware publication guide. Add Linux/Windows installer and guidance-sync CI without model runs or evidence uploads.
 - Determine completion from the whole request rather than treating planning within implementation as a planning-only endpoint. Lead decision explanations with the supported basis, separating user wording from the agent's interpretation without inventing a rationale. Preserve explicit planning boundaries, consequential clarification, and direct correction.
