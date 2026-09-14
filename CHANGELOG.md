@@ -1,5 +1,11 @@
 # Mutual Bearing
 
+## 0.1.1 — 2026-09-14
+
+- Refine adequate reuse and recipient-aware continuity without adding skills or mandatory workflows. Extend focused repair to inspect recipient access and relevant side effects of changed rules or controls.
+- Add synthetic controls for repair side effects, isolated-recipient handoffs, and adequate versus inadequate reuse. Compare previous and revised payloads while retaining raw failures and measurement limits.
+- Retain these refinements as a reversible trial, not a demonstrated performance improvement. Bounded synthetic comparisons found shared targeted success and wider failures; they do not establish general reliability or native host loading. Raw evidence remains local-only.
+
 ## 0.1.0 — 2026-09-14
 
 - Prepare a public Git distribution with an explicit file allowlist, local-only historical evidence, clearer adoption and contribution documentation, and a privacy-aware publication guide. Add Linux/Windows installer and guidance-sync CI without model runs or evidence uploads.

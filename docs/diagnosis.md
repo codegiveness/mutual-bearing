@@ -33,7 +33,7 @@ An unsupported assumption can shape a leading question. A partial answer can the
 
 Other patterns include chasing novelty instead of fit, accumulating unnecessary scope, avoiding a difficult check, seeking agreement rather than evidence, or repeatedly adding instructions to compensate for missing access. These describe observable choices to examine, not hidden intentions to attribute.
 
-Useful repair changes the earliest supported premise and the affected work. Preserve unaffected decisions. A mistake with a clear remedy does not require a session postmortem; an unresolved recurring mismatch may benefit from the bundled [repair skill](../skills/mutual-bearing-repair/SKILL.md).
+Useful repair changes the earliest supported premise and the affected work. Preserve unaffected decisions. A changed rule or control can correct one symptom while obstructing authorized work or weakening another safeguard, so repair also checks relevant side effects. For a failed handoff, what the sender recorded and what the recipient could access can differ. A mistake with a clear remedy does not require a session postmortem; an unresolved recurring mismatch may benefit from the bundled [repair skill](../skills/mutual-bearing-repair/SKILL.md).
 
 ## From labels to observable failures
 
