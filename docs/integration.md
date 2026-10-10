@@ -16,6 +16,8 @@ The [Skills CLI](https://github.com/vercel-labs/skills) obtains the installer th
 
 Oh My Pi natively supports project `.agents/skills` through its `agents` provider. Use the `universal` installation target, not `pi`, whose destination is `.pi`. Discovery remains subject to provider settings, skill filters, and same-name precedence. Hosts that do not read `.agents/skills` need the corresponding supported Skills CLI agent target; verify that host's documented discovery rather than assuming universal compatibility.
 
+Claude Code reads project skills from `.claude/skills`, so install with `--agent claude-code` and run the setup script from `.claude/skills/mutual-bearing-setup/scripts/setup.mjs`. With its default "Project instructions" setting, Claude Code loads `AGENTS.md` only when the project has no `CLAUDE.md`, `.claude/CLAUDE.md`, or `CLAUDE.local.md`; a project that already has one of those would silently skip guidance installed in `AGENTS.md`. In that case select the loaded file explicitly, for example `--instructions CLAUDE.md`. Codex and most other Skills CLI targets use `.agents/skills` and `AGENTS.md`. Check each host's current documentation, because these defaults change.
+
 ## Integrate persistent guidance
 
 Installing a skill does not execute its scripts or modify `AGENTS.md`. Run the bundled setup command once:

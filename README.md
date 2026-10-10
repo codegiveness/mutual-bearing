@@ -33,7 +33,7 @@ The [Skills CLI](https://github.com/vercel-labs/skills) installs both skill dire
 
 Setup integrates the canonical guidance into `AGENTS.md`, preserving unrelated text. If your host actually loads another project instruction file, select it explicitly with `--instructions relative/path`. Do not create a higher-priority instruction file that silently shadows existing project rules. This repository's own root `AGENTS.md` is contributor guidance, **not** the adopter payload.
 
-Reload the host and confirm that it loads both the guidance and skill metadata. A successful setup command establishes on-disk configuration, not runtime activation. Oh My Pi supports the project `.agents/skills` convention; its `pi` installer target is unnecessary and refers to a different host's paths. See [host boundaries, updates, and removal](docs/integration.md).
+Reload the host and confirm that it loads both the guidance and skill metadata. A successful setup command establishes on-disk configuration, not runtime activation. Oh My Pi supports the project `.agents/skills` convention; its `pi` installer target is unnecessary and refers to a different host's paths. Claude Code uses `--agent claude-code` (`.claude/skills`), and an existing `CLAUDE.md` takes precedence over `AGENTS.md`. See [host boundaries, updates, and removal](docs/integration.md).
 
 ## Work normally
 
