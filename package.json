@@ -1,0 +1,32 @@
+{
+  "name": "mutual-bearing",
+  "version": "0.2.0",
+  "description": "Guidance and skills that keep AI agents' work aligned with user intent across requests, follow-ups, and corrections.",
+  "keywords": [
+    "agents",
+    "agents-md",
+    "ai-agents",
+    "skills",
+    "guidance",
+    "llm"
+  ],
+  "homepage": "https://github.com/codegiveness/mutual-bearing#readme",
+  "bugs": "https://github.com/codegiveness/mutual-bearing/issues",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/codegiveness/mutual-bearing.git"
+  },
+  "license": "MIT",
+  "type": "module",
+  "bin": {
+    "mutual-bearing": "skills/mutual-bearing-setup/scripts/setup.mjs"
+  },
+  "files": [
+    "GUIDANCE.md",
+    "CHANGELOG.md",
+    "skills/"
+  ],
+  "engines": {
+    "node": ">=22"
+  }
+}

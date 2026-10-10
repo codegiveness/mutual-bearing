@@ -10,7 +10,7 @@ Use Node.js and npm. From the **adopting project's root**, point the Skills CLI 
 npx skills@latest add /path/to/MutualBearing --skill '*' --agent universal
 ```
 
-Replace the local source path with the actual checkout, or a published Git repository URL when one is available. The project does not assume an unverified public repository slug or npm package. To preview the source's skill catalog, use the same command with `--list`.
+Replace the local source path with the actual checkout, or a published Git repository URL such as `codegiveness/mutual-bearing`. Skills are installed from the Git source; the npm package carries only the setup command. To preview the source's skill catalog, use the same command with `--list`.
 
 The [Skills CLI](https://github.com/vercel-labs/skills) obtains the installer through npm and installs the skill directories under `.agents/skills`. `--skill '*'` selects the complete kit; do not substitute `--all`, which also selects every agent and skips confirmations. Use `--copy` if symlinks are unsuitable. The external CLI may populate npm caches and has its own telemetry controls; `DISABLE_TELEMETRY=1` disables its documented telemetry.
 
@@ -26,7 +26,7 @@ Installing a skill does not execute its scripts or modify `AGENTS.md`. Run the b
 node .agents/skills/mutual-bearing-setup/scripts/setup.mjs install --project .
 ```
 
-Alternatively, explicitly ask the installed setup skill to configure Mutual Bearing in the named project. It uses the same command and ownership rules; it is not a second installer implementation.
+The [`mutual-bearing`](https://www.npmjs.com/package/mutual-bearing) npm package exposes the same script as a command, so `npx mutual-bearing@latest install --project .` (and `check`/`remove`) is equivalent. Use the installed skill's script when working offline or to guarantee the guidance matches the installed skill version. Alternatively, explicitly ask the installed setup skill to configure Mutual Bearing in the named project. It uses the same command and ownership rules; it is not a second installer implementation.
 
 The default target is the adopting project's `AGENTS.md`. The whole canonical [GUIDANCE.md](../GUIDANCE.md), including its `BEGIN MUTUAL BEARING` and `END MUTUAL BEARING` markers, is the only behavioral block installed. This source repository's root `AGENTS.md` is contributor-only and must not be copied as the payload.
 
@@ -64,7 +64,7 @@ node .agents/skills/mutual-bearing-setup/scripts/setup.mjs remove --project .
 
 Then remove the two project skills with the Skills CLI's project-scoped remove command, selecting `mutual-bearing-setup` and `mutual-bearing-repair` only. Do not remove unrelated skills or global copies. Reload the host. Setup removes only its unchanged recorded block and owned state, preserving other text and files; edited content requires reconciliation instead of silent deletion.
 
-No Mutual Bearing service, background process, or separately published npm runtime is installed. npm cache management belongs to npm, not the setup script.
+No Mutual Bearing service or background process is installed. The npm package is only the setup command with its bundled guidance; npm cache management belongs to npm, not the setup script.
 
 ## Maintaining the bundled payload
 

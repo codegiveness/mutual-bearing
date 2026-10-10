@@ -5,6 +5,7 @@
 - Rewrite `GUIDANCE.md` as a compact behavioral contract (1,178 → 841 words): each rule names an observable situation and the action, targeting failures seen without guidance, such as committing to a consequential reading before asking, presenting a simulated effect as real, and opening a decision explanation with agreement instead of its basis. Rationale moves to `docs/design.md`.
 - Refer to skills by function so hosts without them do not attempt a load; restructure `mutual-bearing-repair` and make its description trigger-specific.
 - Document Claude Code installation (`--agent claude-code`) and its `CLAUDE.md`-over-`AGENTS.md` precedence; make contributor instructions actionable, including worktree and allowlist mechanics.
+- Publish the setup script as the `mutual-bearing` npm package, so `npx mutual-bearing@latest install --project .` installs the guidance block; document the staged npm release procedure.
 - Bounded synthetic comparison with Claude models: no semantic failures in 210 revised sessions versus 15 in 180 previous-payload sessions; no reliable difference on a smaller model. Raw evidence remains local-only.
 
 ## 0.1.1 — 2026-09-14

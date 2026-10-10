@@ -49,6 +49,13 @@ Create an **empty private repository** named `mutual-bearing` on your chosen hos
 
 GitHub's included workflow checks guidance synchronization and installer safeguards on Linux and Windows with Node.js 22 and 24. It does not run paid model evaluations or upload conversation artifacts. Local success is not proof that hosted CI or native host loading passed.
 
+## Release a version
+
+1. Update `version` in `package.json` and add a `CHANGELOG.md` entry; run the local checks and `npm pack --dry-run`, and confirm the tarball holds only `GUIDANCE.md`, `CHANGELOG.md`, `README.md`, `LICENSE`, `package.json`, and `skills/`.
+2. Merge to `main`, create an annotated `vX.Y.Z` tag, push both, and create the GitHub release from the changelog entry.
+3. Stage the npm package with `npm stage publish` from a logged-in account (`npm login --auth-type=web`). Staging needs npm CLI 11.15.0+ and no 2FA.
+4. A maintainer reviews it with `npm stage list mutual-bearing` and `npm stage view <stage-id>`, then approves with `npm stage approve <stage-id>` or in the **Staged Packages** tab on npmjs.com; approval requires 2FA. See [staged publishing](https://docs.npmjs.com/staged-publishing/).
+
 ## Launch presentation
 
 Suggested repository description:

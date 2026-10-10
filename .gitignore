@@ -8,6 +8,7 @@
 !/GUIDANCE.md
 !/LICENSE
 !/README.md
+!/package.json
 !/.github/
 /.github/*
 !/.github/workflows/

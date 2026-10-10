@@ -26,10 +26,10 @@ With Node.js and npm available, run these commands **in the project adopting Mut
 
 ```sh
 npx skills@latest add codegiveness/mutual-bearing --skill '*' --agent universal
-node .agents/skills/mutual-bearing-setup/scripts/setup.mjs install --project .
+npx mutual-bearing@latest install --project .
 ```
 
-The [Skills CLI](https://github.com/vercel-labs/skills) installs both skill directories under `.agents/skills`. npm supplies that CLI; Mutual Bearing does not need a separate npm package. Use `--copy` if symlinks are unsuitable. For an offline source checkout, replace `codegiveness/mutual-bearing` with its local path.
+The [Skills CLI](https://github.com/vercel-labs/skills) installs both skill directories under `.agents/skills`. The `mutual-bearing` npm package runs the same setup script bundled in the setup skill; `node .agents/skills/mutual-bearing-setup/scripts/setup.mjs install --project .` is equivalent and works offline. Use `--copy` if symlinks are unsuitable. For an offline source checkout, replace `codegiveness/mutual-bearing` with its local path.
 
 Setup integrates the canonical guidance into `AGENTS.md`, preserving unrelated text. If your host actually loads another project instruction file, select it explicitly with `--instructions relative/path`. Do not create a higher-priority instruction file that silently shadows existing project rules. This repository's own root `AGENTS.md` is contributor guidance, **not** the adopter payload.
 
